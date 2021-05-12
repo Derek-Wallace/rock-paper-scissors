@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body class="theme-bg">
+  
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center text-center mt-3 my-md-3 py-md-3">
+        <h1>Choose your weapon</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center mb-3 mt-2">
+        <h2 id="record">0-0</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center my-3">
+        <h3 id="outcome"></h3>
+      </div>
+    </div>
+  </header>
+  <main class="containter-fluid">
+    <div class="row my-3 mx-0 mx-md-4">
+      <div class="col-4">
+        <div class="text-right">
+          <button class="btn rock-bg px-3 py-2" onclick="getWeapon('Rock')">Rock</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text-center">
+          <button class="btn paper-bg px-3 py-2" onclick="getWeapon('Paper')">Paper</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text-left">
+          <button class="btn scissors-bg px-3 py-2" onclick="getWeapon('Scissors')">Scissors</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-0 mx-md-4">
+      <div class="col-6">
+        <h1 class="text-left">YOU</h1>
+      </div>
+      <div class="col-6">
+        <h1 class="text-right">COM</h1>
+      </div>
+    </div>
+    <div class="row mx-0">
+      <div id="player-screen" class="col-6 edge">
+        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png" alt="">
+      </div>
+      <div id="comp-screen" class="col-6 edge">
+        <img class="img-fluid img-flip" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png" alt="">
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

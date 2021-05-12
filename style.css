@@ -1,0 +1,47 @@
+:root {
+  --theme-bg: rgba(0, 40, 158, 0.171);
+  --rock: rgb(88, 61, 38);
+  --paper: rgb(241, 241, 241);
+  --scissors: rgb(0, 0, 170);
+}
+
+* {
+  color: azure;
+}
+
+header {
+  font-family: 'Goblin One', cursive;
+}
+
+body {
+  font-family: 'Goblin One', cursive;
+}
+
+.theme-bg {
+  background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg);
+  background-size: cover;
+  
+}
+
+.img-flip {
+  transform: scaleX(-1)
+}
+
+.rock-bg {
+  background-color: var(--rock);
+  color: azure;
+}
+
+.paper-bg {
+  background-color: var(--paper);
+}
+
+.scissors-bg {
+  background-color: var(--scissors);
+  color: azure;
+}
+
+.edge {
+  padding-left: 0px;
+  padding-right: 0px;
+}
